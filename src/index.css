@@ -6,12 +6,14 @@
   /* Deepest Black */
   --bg-secondary: #161616;
   /* Card/Section Background */
-  --bg-glass: rgba(15, 15, 15, 0.85);
+  --bg-dark-gradient: linear-gradient(145deg, #0f0f0f, #141414);
+  --bg-glass: rgba(15, 15, 15, 0.9);
   /* Glassmorphism */
 
   --color-gold: #c5a059;
   /* Refined Gold */
   --color-gold-hover: #e0b86a;
+  --color-gold-gradient: linear-gradient(45deg, #c5a059, #e0b86a);
   --color-white: #ffffff;
   --color-text-muted: #a3a3a3;
 

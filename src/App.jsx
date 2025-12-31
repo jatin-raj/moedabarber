@@ -5,6 +5,8 @@ import Booking from './components/Booking';
 import Location from './components/Location';
 import Policies from './components/Policies';
 import Services from './components/Services';
+import About from './components/About';
+import Reviews from './components/Reviews';
 import Footer from './components/Footer';
 
 function App() {
@@ -12,10 +14,12 @@ function App() {
         <div className="App">
             <Navbar />
             <Hero />
+            <About />
+            <Services />
+            <Reviews />
             <Booking />
             <Location />
             <Policies />
-            <Services />
             <Footer />
         </div>
     );
