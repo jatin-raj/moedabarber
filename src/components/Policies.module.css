@@ -1,0 +1,76 @@
+.policiesSection {
+    background-color: var(--bg-secondary);
+    padding: 100px 0;
+    background-image: linear-gradient(to bottom, rgba(22, 22, 22, 0.95), rgba(22, 22, 22, 0.98)), url('/assets/shop_interior.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.mainTitle {
+    color: var(--color-gold);
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.policyGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+}
+
+.policyCard {
+    background: rgba(15, 15, 15, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition-smooth);
+}
+
+.policyCard:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-gold);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.icon {
+    color: var(--color-gold);
+}
+
+.policyCard h3 {
+    color: var(--color-white);
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.policyCard ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.policyCard li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    color: var(--color-text-muted);
+    font-size: 1rem;
+}
+
+.policyCard li svg {
+    color: var(--color-gold);
+    min-width: 16px;
+}

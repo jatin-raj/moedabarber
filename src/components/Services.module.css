@@ -1,0 +1,111 @@
+.servicesSection {
+    background-color: var(--bg-primary);
+    position: relative;
+    padding: 120px 0;
+    /* Optional: add background image tint */
+    background-image: linear-gradient(rgba(15, 15, 15, 0.95), rgba(15, 15, 15, 0.95)), url('/assets/barber_tools.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sectionTitle {
+    color: var(--color-white);
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    letter-spacing: 0.1em;
+    position: relative;
+    z-index: 1;
+}
+
+.sectionTitle::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-gold);
+    margin: 20px auto 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.card {
+    background-color: rgba(22, 22, 22, 0.6);
+    /* Glass-like opacity */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-color: var(--color-gold);
+    background-color: rgba(22, 22, 22, 0.9);
+}
+
+.iconWrapper {
+    color: var(--color-gold);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cardContent {
+    margin-bottom: 2rem;
+}
+
+.serviceTitle {
+    color: var(--color-white);
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    font-family: var(--font-heading);
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+    margin-top: auto;
+}
+
+.price {
+    color: var(--color-gold);
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.duration {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    display: flex;
+    align-items: center;
+}
+
+.cardAction {
+    margin-top: auto;
+}
+
+.cardAction a {
+    font-size: 0.9rem;
+    padding: 12px 20px;
+}
