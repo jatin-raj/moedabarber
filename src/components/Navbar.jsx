@@ -48,7 +48,7 @@ const Navbar = () => {
 
                 <div className={styles.logo}>
                     <a href="#">
-                        <img src="/assets/logo.png" alt="Moe Da Barber" className={styles.logoImage} />
+                        <img src="/moedabarber/assets/logo.png" alt="Moe Da Barber" className={styles.logoImage} />
                     </a>
                 </div>
 

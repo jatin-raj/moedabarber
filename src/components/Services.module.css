@@ -3,7 +3,7 @@
     position: relative;
     padding: 120px 0;
     /* Optional: add background image tint */
-    background-image: linear-gradient(rgba(15, 15, 15, 0.95), rgba(15, 15, 15, 0.95)), url('/assets/barber_tools.png');
+    background-image: linear-gradient(rgba(15, 15, 15, 0.95), rgba(15, 15, 15, 0.95)), url('/moedabarber/assets/barber_tools.png');
     background-size: cover;
     background-attachment: fixed;
 }

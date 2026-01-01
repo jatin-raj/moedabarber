@@ -8,7 +8,7 @@ const About = () => {
             <div className={`container ${styles.container}`}>
                 <div className={styles.imageCol}>
                     <div className={styles.imageWrapper}>
-                        <img src="/assets/barber_portrait.png" alt="Master Barber" className={styles.barberImage} />
+                        <img src="/moedabarber/assets/barber_portrait.png" alt="Master Barber" className={styles.barberImage} />
                         <div className={styles.experienceBadge}>
                             <span className={styles.years}>10+</span>
                             <span className={styles.text}>Years Exp.</span>

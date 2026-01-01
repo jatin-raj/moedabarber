@@ -1,7 +1,7 @@
 .policiesSection {
     background-color: var(--bg-secondary);
     padding: 100px 0;
-    background-image: linear-gradient(to bottom, rgba(22, 22, 22, 0.95), rgba(22, 22, 22, 0.98)), url('/assets/shop_interior.png');
+    background-image: linear-gradient(to bottom, rgba(22, 22, 22, 0.95), rgba(22, 22, 22, 0.98)), url('/moedabarber/assets/shop_interior.png');
     background-size: cover;
     background-position: center;
 }
