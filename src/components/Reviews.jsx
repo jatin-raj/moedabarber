@@ -1,5 +1,6 @@
 import React from 'react';
 import { Star, Quote } from 'lucide-react';
+import TiltCard from './ui/TiltCard';
 import styles from './Reviews.module.css';
 
 const reviewsData = [
@@ -41,7 +42,7 @@ const Reviews = () => {
 
                 <div className={styles.grid}>
                     {reviewsData.map((review) => (
-                        <div key={review.id} className={styles.card}>
+                        <TiltCard key={review.id} className={styles.card}>
                             <Quote className={styles.quoteIcon} size={40} />
                             <p className={styles.reviewText}>"{review.text}"</p>
                             <div className={styles.author}>
@@ -52,7 +53,7 @@ const Reviews = () => {
                                 </div>
                                 <span className={styles.authorName}>{review.name}</span>
                             </div>
-                        </div>
+                        </TiltCard>
                     ))}
                 </div>
             </div>

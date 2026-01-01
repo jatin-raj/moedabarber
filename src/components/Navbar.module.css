@@ -28,6 +28,9 @@
     font-weight: 700;
     letter-spacing: 0.1em;
     color: var(--color-white);
+    position: relative;
+    z-index: 1002;
+    /* Above mobile menu */
 }
 
 .logo span {
@@ -46,6 +49,23 @@
     letter-spacing: 0.1em;
     font-weight: 500;
     color: var(--color-text-muted);
+    position: relative;
+    /* For animation */
+}
+
+.navLinks a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--color-gold);
+    transition: width 0.3s ease;
+}
+
+.navLinks a:hover::after {
+    width: 100%;
 }
 
 .navLinks a:hover {
@@ -56,43 +76,37 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    position: relative;
+    z-index: 1002;
+    /* Above mobile menu */
 }
 
 /* Hamburger */
 .hamburger {
     display: none;
-    flex-direction: column;
-    gap: 6px;
     background: none;
+    border: none;
     cursor: pointer;
-}
-
-.hamburger span {
-    display: block;
-    width: 25px;
-    height: 2px;
-    background-color: var(--color-white);
-    transition: var(--transition-fast);
+    z-index: 1002;
+    padding: 5px;
 }
 
 /* Mobile Menu */
 .mobileMenu {
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
-    height: 100vh;
-    background-color: var(--bg-primary);
+    max-width: 400px;
+    /* Drawer style */
+    background-color: #0f0f0f;
     z-index: 999;
-    padding-top: 100px;
-    transform: translateY(-100%);
-    transition: var(--transition-smooth);
+    padding-top: 120px;
     display: flex;
     justify-content: center;
-}
-
-.mobileMenuOpen {
-    transform: translateY(0);
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.8);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .mobileLinks {
@@ -100,12 +114,15 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    padding: 20px;
+    width: 100%;
 }
 
 .mobileLinks a {
     font-family: var(--font-heading);
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--color-white);
+    text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
@@ -115,25 +132,10 @@
 
     .navActions .btn {
         display: none;
-        /* Hide primary button on mobile header, show hamburger */
+        /* Hide primary button on mobile header */
     }
 
     .hamburger {
-        display: flex;
-        z-index: 1001;
-        /* Above menu */
-    }
-
-    /* Simple Animation for Hamburger */
-    .hamburger span.open:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 6px);
-    }
-
-    .hamburger span.open:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger span.open:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -6px);
+        display: block;
     }
 }

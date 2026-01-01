@@ -8,18 +8,21 @@ import Services from './components/Services';
 import About from './components/About';
 import Reviews from './components/Reviews';
 import Footer from './components/Footer';
+import useScrollReveal from './hooks/useScrollReveal';
 
 function App() {
+    useScrollReveal();
+
     return (
         <div className="App">
             <Navbar />
             <Hero />
-            <About />
-            <Services />
-            <Reviews />
-            <Booking />
-            <Location />
-            <Policies />
+            <div className="reveal"><About /></div>
+            <div className="reveal"><Services /></div>
+            <div className="reveal"><Reviews /></div>
+            <div className="reveal"><Booking /></div>
+            <div className="reveal"><Location /></div>
+            <div className="reveal"><Policies /></div>
             <Footer />
         </div>
     );
