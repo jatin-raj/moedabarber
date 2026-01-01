@@ -47,7 +47,9 @@ const Navbar = () => {
             <div className={`container ${styles.navContainer}`}>
 
                 <div className={styles.logo}>
-                    <a href="#">MOEDA<span>BARBER</span></a>
+                    <a href="#">
+                        <img src="/assets/logo.png" alt="Moe Da Barber" className={styles.logoImage} />
+                    </a>
                 </div>
 
                 {/* Desktop Menu */}
@@ -59,7 +61,7 @@ const Navbar = () => {
                 </ul>
 
                 <div className={styles.navActions}>
-                    <a href="https://moedabarber.as.me/schedule/e7a32642" className="btn btn-primary">
+                    <a href="https://moedabarber.as.me/schedule/e7a32642" className={`btn btn-primary ${styles.desktopBtn}`}>
                         Book Appointment
                     </a>
 
@@ -69,7 +71,7 @@ const Navbar = () => {
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                         aria-label="Toggle Menu"
                     >
-                        {mobileMenuOpen ? <X size={28} color="white" /> : <Menu size={28} color="white" />}
+                        {mobileMenuOpen ? <X size={28} color="var(--color-gold)" /> : <Menu size={28} color="var(--color-gold)" />}
                     </button>
                 </div>
             </div>

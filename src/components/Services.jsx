@@ -1,6 +1,5 @@
 import React from 'react';
 import { Scissors, Zap, User, Clock, Crown, Users, CheckCircle } from 'lucide-react';
-import TiltCard from './ui/TiltCard';
 import styles from './Services.module.css';
 
 const servicesData = [
@@ -62,7 +61,7 @@ const Services = () => {
                 <h2 className={styles.sectionTitle}>PREMIUM SERVICES</h2>
                 <div className={styles.grid}>
                     {servicesData.map((service) => (
-                        <TiltCard key={service.id} className={styles.card}>
+                        <div key={service.id} className={styles.card}>
                             <div className={styles.iconWrapper}>
                                 {service.icon}
                             </div>
@@ -79,7 +78,7 @@ const Services = () => {
                             <div className={styles.cardAction}>
                                 <a href="https://moedabarber.as.me/schedule/e7a32642" className="btn btn-outline" style={{ width: '100%' }}>Book Appointment</a>
                             </div>
-                        </TiltCard>
+                        </div>
                     ))}
                 </div>
             </div>
